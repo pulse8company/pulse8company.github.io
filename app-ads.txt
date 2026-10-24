@@ -1,3 +1,1 @@
-# Pulse8 app-ads.txt
-# Setup pending: replace these comments with the exact authorized seller entries supplied by your advertising networks.
-# No advertising sellers are declared in this file yet.
+google.com, pub-7226446414633998, DIRECT, f08c47fec0942fa0
