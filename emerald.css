@@ -51,7 +51,7 @@ body.home {
 
 /* Six titles, with an accessible milestone on the racing banner. */
 .home .game-tabs { grid-template-columns: repeat(6, minmax(0, 1fr)); }
-.drag .concept-frame { position: relative; }
+.drag .concept-frame, .red .concept-frame { position: relative; }
 .install-milestone { position: absolute; top: 18px; left: 18px; display: flex; align-items: center; gap: 12px; padding: 13px 17px; border: 1px solid #e2eead60; border-radius: 10px; background: #061e18ed; color: #f5f6ec; box-shadow: 0 6px 24px #0004; }
 .install-milestone strong { font: 800 clamp(26px, 3vw, 40px)/1 Manrope, Arial, sans-serif; letter-spacing: -1.5px; color: #e2eead; }
 .install-milestone span { font-size: 13px; line-height: 1.4; font-weight: 700; }
