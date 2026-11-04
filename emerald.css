@@ -38,3 +38,13 @@ body.home {
   .home .intro { padding: 34px 0 30px; }
   .home .player-help { padding: 22px; }
 }
+
+/* UAE-inspired studio mark, placed after the navigation. */
+.home header .nav { margin-left: auto; }
+.heritage-mark { flex: 0 0 auto; border-left: 1px solid #c5d6c940; padding-left: 26px; display: flex; align-items: center; }
+.heritage-mark img { width: 84px; height: 55px; object-fit: contain; }
+@media(max-width:720px) {
+  .heritage-mark { margin-left: auto; padding-left: 18px; }
+  .heritage-mark img { width: 70px; height: 46px; }
+  .home header .nav { margin-left: 0; }
+}
