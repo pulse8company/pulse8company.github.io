@@ -1,0 +1,28 @@
+/* Shared language navigation, including static pages without JavaScript. */
+.wrap>header { height: auto; min-height:100px; flex-wrap:wrap; padding:22px 0 14px; row-gap:16px; }
+.language-switch { order:10; flex:0 0 100%; display:flex; align-items:center; justify-content:flex-end; flex-wrap:wrap; gap:5px; padding-top:12px; border-top:1px solid var(--line, #dbe0d6); font-size:11px; line-height:1.2; }
+.language-switch>span { margin-right:9px; color:var(--muted, #637169); }
+.language-switch a { display:inline-flex; min-width:34px; min-height:32px; align-items:center; justify-content:center; border:1px solid transparent; border-radius:6px; font-weight:700; }
+.language-switch a:hover { border-color:var(--line, #dbe0d6); }
+.language-switch a[aria-current=page] { background:var(--green, #0c382b); color:#f5f6ec; }
+.home .language-switch a[aria-current=page] { background:#e2eead; color:#142f27; }
+html:not([lang=en]) h1, html:not([lang=en]) h2 { overflow-wrap:anywhere; }
+html:not([lang=en]) .intro h1 { font-size:clamp(34px,4.5vw,64px); letter-spacing:-2px; }
+html:not([lang=en]) .slide h2 { font-size:clamp(38px,4.2vw,58px); }
+html:not([lang=en]) .eyebrow { letter-spacing:1px; }
+html:not([lang=en]) .metric-tabs { flex-wrap:wrap; }
+html:not([lang=en]) .chart-grid { min-width:0; }
+html:not([lang=en]) .slide-status { max-width:45%; }
+@media(max-width:1000px){
+  .wrap>header>.nav { gap:16px; font-size:12px; }
+  html:not([lang=en]) .wrap>header>.nav { order:3; width:100%; justify-content:center; margin-left:0; flex-wrap:wrap; }
+  html:not([lang=en]) .heritage-mark { margin-left:auto; }
+}
+@media(max-width:720px){
+  .wrap>header { padding:20px 0 13px; }
+  .language-switch { justify-content:center; }
+  html:not([lang=en]) .intro h1 { font-size:40px; letter-spacing:-1.6px; }
+  html:not([lang=en]) .slide h2 { font-size:42px; }
+  html:not([lang=en]) .game-tab strong { font-size:11px; }
+  .language-switch>span { margin-right:4px; }
+}
